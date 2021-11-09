@@ -9,4 +9,28 @@ body {
           padding-bottom: calc(100% / 12);
       }
   }
+
+  .column-one {
+    background: palevioletred;
+  }
+
+  .column-two {
+    background: rgb(243, 193, 117);
+  }
+
+  .column-three {
+    background: palegoldenrod;
+  }
+
+  .column-four {
+    background: rgb(163, 221, 163);
+  }
+
+  .column-five {
+    background: paleturquoise;
+  }
+
+  .column-six {
+    background: plum;
+  }
 }
