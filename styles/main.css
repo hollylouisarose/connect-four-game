@@ -1,1 +1,14 @@
-body{background-color:pink}/*# sourceMappingURL=main.css.map */
+body {
+  max-width: 800px;
+}
+body .grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .grid div {
+  border: solid black 1px;
+  width: 14.2857142857%;
+  padding-bottom: 8.3333333333%;
+}
+
+/*# sourceMappingURL=main.css.map */

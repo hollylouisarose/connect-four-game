@@ -1,3 +1,12 @@
 body {
-  background-color: pink;
+  max-width: 800px;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+        div {
+          border: solid black 1px;
+          width: calc(100% / 7);
+          padding-bottom: calc(100% / 12);
+      }
+  }
 }
