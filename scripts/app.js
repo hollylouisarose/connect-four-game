@@ -84,12 +84,16 @@ const setColumns = () => {
 
 
 const handleChoice = (e) => {
-  cells.map((cell => {
-    if (parseFloat(e.target.id) === parseFloat(cell.id)){
-      console.log('choice', cell)
+  const clickId = parseFloat(e.target.id)
+  cells.forEach(cell => {
+    const cellId = parseFloat(cell.id)
+    if (cellId === clickId && cellId <= 5){
+      cell.classList.add('counter')
+      console.log(cell)
     }
-  }))
+  })
 }
+
 
 grid.addEventListener('click', handleChoice)
 

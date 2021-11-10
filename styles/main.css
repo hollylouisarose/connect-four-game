@@ -10,6 +10,9 @@ body .grid div {
   width: 14.2857142857%;
   padding-bottom: 8.3333333333%;
 }
+body .counter {
+  background: blue;
+}
 body .column-one {
   background: palevioletred;
 }
