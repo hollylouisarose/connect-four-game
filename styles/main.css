@@ -10,9 +10,6 @@ body .grid div {
   width: 14.2857142857%;
   padding-bottom: 8.3333333333%;
 }
-body .counter {
-  background: blue;
-}
 body .column-one {
   background: palevioletred;
 }
@@ -30,6 +27,10 @@ body .column-five {
 }
 body .column-six {
   background: plum;
+}
+body .counter {
+  background: blue;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=main.css.map */

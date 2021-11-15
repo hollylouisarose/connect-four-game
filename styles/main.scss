@@ -10,10 +10,6 @@ body {
       }
   }
 
-  .counter {
-    background: blue;
-  }
-
   .column-one {
     background: palevioletred;
   }
@@ -37,4 +33,10 @@ body {
   .column-six {
     background: plum;
   }
+
+  .counter {
+    background: blue;
+    z-index: 2;
+  }
+
 }
