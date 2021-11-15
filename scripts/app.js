@@ -1,6 +1,8 @@
 const grid = document.querySelector('.grid')
 const cells = []
 let i = 0
+let counterPosition = null
+const counterClass = 'counter'
 
 const columnOne = []
 const columnTwo = []
@@ -82,21 +84,35 @@ const setColumns = () => {
 
 }
 
+const addCounter = () => {
+  cells[counterPosition].classList.add(counterClass)
+}
+
+const removeCounter = () => {
+  cells[counterPosition].classList.add(counterClass)
+}
 
 const handleChoice = (e) => {
   const clickId = parseFloat(e.target.id)
   cells.forEach(cell => {
     const cellId = parseFloat(cell.id)
     if (cellId === clickId && cellId <= 5){
-      cell.classList.add('counter')
-      console.log(cell)
+      counterPosition = cellId
+      handleMove()
     }
   })
 }
 
+const handleMove = () => {
+  setInterval(() => {
+    if (counterPosition <= 41){
+      addCounter()
+      counterPosition += 6
+    }
+  }, 500)
+}
 
 grid.addEventListener('click', handleChoice)
 
 createGrid()
 setColumns()
-
